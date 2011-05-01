@@ -24,6 +24,12 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ExemploCompilador.boo">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExibirAttribute.boo">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.boo" />
     <Compile Include="BlocoMacro.boo" />
   </ItemGroup>

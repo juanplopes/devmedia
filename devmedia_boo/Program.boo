@@ -1,6 +1,9 @@
 import System;
 import System.Linq.Enumerable;
 
+def teste_atributo([exibir]a, [exibir]b):
+    print "abc"
+
 #exemplo1
 print "Hello World"
 
@@ -25,4 +28,6 @@ print join(pares.Take(5))
 bloco "teste":
     print "estou dentro do bloco!"
 
+#exemplo6
+teste_atributo(123, null)
 Console.ReadKey();

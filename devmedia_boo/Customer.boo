@@ -1,4 +1,4 @@
-﻿public class Cliente:
+﻿public class Customer:
     [getter(FirstName)]
     _fname as string
 

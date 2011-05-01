@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TestCSharp
 {
-public class Cliente2
+public class Customer
 {
     string _fname;
     public string FirstName { get { return _fname; } }
@@ -13,7 +13,7 @@ public class Cliente2
     string _lname;
     public string LastName { get { return _lname; } }
 
-    public Cliente2(string fname, string lname)
+    public Customer(string fname, string lname)
     {
         if (fname == null) throw new ArgumentNullException("fname");
         if (lname == null) throw new ArgumentNullException("lname");
