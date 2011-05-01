@@ -19,9 +19,10 @@ quatro = dois_mais_dois()
 
 #exemplo4
 pares = i for i in range(1000) if i % 2 == 0
-print(join(pares.Take(5)))
+print join(pares.Take(5))
 
-
-
+#exemplo5
+bloco "teste":
+    print "estou dentro do bloco!"
 
 Console.ReadKey();
