@@ -23,7 +23,7 @@ namespace ExampleFormBuilder
         public IFormDefinition Compile(string script)
         {
             boo.Parameters.Input.Clear();
-            boo.Parameters.Input.Add(new StringInput("test", script));
+            boo.Parameters.Input.Add(new StringInput("<script>", script));
             var compiler = boo.Run();
             if (compiler.Errors.Count > 0)
                 throw compiler.Errors[0];

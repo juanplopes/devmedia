@@ -11,6 +11,8 @@ Project("{CF123CF3-45B4-3FD7-96E9-A5194B39EB02}") = "TestExtensibilityBoo", "Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleFormBuilder", "ExampleFormBuilder\ExampleFormBuilder.csproj", "{FE3475E4-3560-4D37-8863-E2D61E287547}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleExpressionCompiler", "ExampleExpressionCompiler\ExampleExpressionCompiler.csproj", "{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,16 @@ Global
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Release|Mixed Platforms.Build.0 = Release|x86
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Release|x86.ActiveCfg = Release|x86
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Release|x86.Build.0 = Release|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|x86.ActiveCfg = Debug|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|x86.Build.0 = Debug|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Release|Any CPU.ActiveCfg = Release|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Release|Mixed Platforms.Build.0 = Release|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Release|x86.ActiveCfg = Release|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
