@@ -30,4 +30,16 @@ bloco "teste":
 
 #exemplo6
 teste_atributo(123, null)
+
+#exemplo7
+str = "Hello World!"
+duck_obj as duck = str
+#duck_obj.some_method() #falhará, pois String não contém some_method
+
+#exemplo8
+obj = QuackExample()
+obj.metodo_exemplo()
+obj.propriedade_exemplo = 2
+print obj.propriedade_exemplo
+
 Console.ReadKey();
