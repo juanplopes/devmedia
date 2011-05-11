@@ -9,8 +9,9 @@ namespace ExampleExpressionCompiler
 {
     public class CustomDuckTypeExpanderStep : ProcessMethodBodiesWithDuckTyping
     {
-        HashSet<string> variables = new HashSet<string>();
         public IEnumerable<string> Variables { get { return variables; } }
+        
+        HashSet<string> variables = new HashSet<string>();
 
         public override void OnModule(Boo.Lang.Compiler.Ast.Module module)
         {
@@ -30,7 +31,7 @@ namespace ExampleExpressionCompiler
                 var parameter = _currentMethod.GetParameters()[0];
                 var dictionary = TypeSystemServices.Map(typeof(IDictionary<string, object>));
 
-                var getter = NameResolutionService.ResolveProperty(dictionary, "Item").GetGetMethod();
+                var getter = NameResolutionService.ResolveMethod(dictionary, "get_Item");
                 var propCall = CodeBuilder.CreateMethodInvocation(
                     CodeBuilder.CreateReference(parameter),
                     getter, 

@@ -63,7 +63,7 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="TestExtensibilityBoo\TestExtensibilityBoo.booproj">
+    <ProjectReference Include="..\TestExtensibilityBoo\TestExtensibilityBoo.booproj">
       <Name>TestExtensibilityBoo</Name>
       <Project>{6e64a42c-f85b-4fb5-9139-cbf85ae8e4ae}</Project>
       <Private>True</Private>

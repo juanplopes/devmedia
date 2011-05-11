@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomDuckTypeExpanderStep.cs" />
+    <Compile Include="DecimalInput.cs" />
     <Compile Include="ExpressionCompiler.cs" />
     <Compile Include="ScriptInputForm.cs">
       <SubType>Form</SubType>
@@ -86,6 +87,7 @@
     <EmbeddedResource Include="ValuesInputForm.resx">
       <DependentUpon>ValuesInputForm.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\DecimalInput.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

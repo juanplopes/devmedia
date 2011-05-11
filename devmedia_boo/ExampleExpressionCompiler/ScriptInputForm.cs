@@ -16,22 +16,25 @@ namespace ExampleExpressionCompiler
             InitializeComponent();
         }
 
-        private void BuildCommand_Click(object sender, EventArgs e)
+        private void EvaluateCommand_Click(object sender, EventArgs e)
         {
-            //try
-            //{
-            var compiler = new ExpressionCompiler();
-            var function = compiler.Compile(ScriptInput.Text);
-            var input = compiler.LastExpressionParams.ToDictionary(x => x, x => 0m);
-            var form = new ValuesInputForm(input);
-            form.ShowDialog();
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message, "Error",
-            //        MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            try
+            {
+                var compiler = new ExpressionCompiler();
+                var function = compiler.Compile(ScriptInput.Text);
+                var input = compiler.LastExpressionParams.ToArray();
+                var form = new ValuesInputForm(input);
+                if (form.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    var result = function(form.Values);
+                    MessageBox.Show(string.Format("The result is: {0}", result), "Result");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

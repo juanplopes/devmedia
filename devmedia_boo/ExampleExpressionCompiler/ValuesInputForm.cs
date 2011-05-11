@@ -11,13 +11,25 @@ namespace ExampleExpressionCompiler
 {
     public partial class ValuesInputForm : Form
     {
-        IList<KeyValuePair<string, decimal>> values;
-
-        public ValuesInputForm(IDictionary<string, decimal> values)
+        public IDictionary<string, object> Values
         {
+            get { return values.ToDictionary(x => x.Key, x => (object)x.Value); }
+        }
+
+        IList<DecimalInput> values;
+        public ValuesInputForm(string[] names)
+        {
+            Array.Sort(names);
             InitializeComponent();
-            this.values = values.ToList();
-            Grid.DataSource = this.values;
+            values = names.Select(x => new DecimalInput(x, 0m)).ToList();
+            decimalInputBindingSource.DataSource = values;
+            Grid.DataSource = decimalInputBindingSource;
+        }
+
+        private void OkCommand_Click(object sender, EventArgs e)
+        {
+            DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Close();
         }
     }
 }

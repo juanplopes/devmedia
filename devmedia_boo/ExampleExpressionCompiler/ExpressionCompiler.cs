@@ -11,10 +11,14 @@ namespace ExampleExpressionCompiler
 {
     public class ExpressionCompiler
     {
-        public IEnumerable<string> LastExpressionParams { get { return step.Variables; } }
+        public IEnumerable<string> LastExpressionParams
+        {
+            get { return step.Variables; }
+        }
+
         BooCompiler boo = new BooCompiler();
         CustomDuckTypeExpanderStep step = new CustomDuckTypeExpanderStep();
-       
+
         public ExpressionCompiler()
         {
             boo.Parameters.Pipeline = new CompileToMemory().Replace(

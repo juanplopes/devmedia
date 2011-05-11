@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{CF123CF3-45B4-3FD7-96E9-A5194B39EB02}") = "BooArticle", "BooArticle.booproj", "{C06C50AA-EA8E-48CA-823B-B57F72D67469}"
+Project("{CF123CF3-45B4-3FD7-96E9-A5194B39EB02}") = "BooArticle", "BooArticle\BooArticle.booproj", "{C06C50AA-EA8E-48CA-823B-B57F72D67469}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCSharp", "TestCSharp\TestCSharp.csproj", "{C0FE5FA6-FEB7-4421-93A7-EAA9DE343781}"
 EndProject
@@ -69,6 +69,7 @@ Global
 		{6E64A42C-F85B-4FB5-9139-CBF85AE8E4AE}.Release|x86.ActiveCfg = Release|x86
 		{6E64A42C-F85B-4FB5-9139-CBF85AE8E4AE}.Release|x86.Build.0 = Release|x86
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{FE3475E4-3560-4D37-8863-E2D61E287547}.Debug|Any CPU.Build.0 = Debug|x86
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Debug|x86.ActiveCfg = Debug|x86
@@ -79,6 +80,7 @@ Global
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Release|x86.ActiveCfg = Release|x86
 		{FE3475E4-3560-4D37-8863-E2D61E287547}.Release|x86.Build.0 = Release|x86
 		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|Any CPU.Build.0 = Debug|x86
 		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
 		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|Mixed Platforms.Build.0 = Debug|x86
 		{1BB299FC-A65F-4BAA-9F4B-7DD8F203D4DD}.Debug|x86.ActiveCfg = Debug|x86
